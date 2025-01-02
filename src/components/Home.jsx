@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <>
-<div className="h-[1600px] w-full bg-gradient-to-b from-[#1f2029] via-[#2a2c39] to-[#11151f] ">
+<div className="h-full w-full bg-gradient-to-b from-[#1f2029] via-[#2a2c39] to-[#11151f] overflow-hidden ">
   {/* Hero Section */}
   <section className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-10">
       {/* Image Section */}
@@ -255,9 +255,7 @@ Recent Projects
 </section>
 
   {/* Footer Section */}
-  <footer className="bg-[#11151f] py-6 text-center text-white">
-    <p className="text-sm">© 2025 Mirta Akins. All Rights Reserved.</p>
-  </footer>
+ 
 </div>
 
 

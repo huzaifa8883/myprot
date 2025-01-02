@@ -4,20 +4,22 @@ import { motion } from 'framer-motion';
 const ProjectsPage = () => {
   return (
     <div className="px-6 md:px-12 py-20 bg-gradient-to-b from-[#1f2029] via-[#2a2c39] to-[#11151f]">
- <motion.h1
-  initial={{ opacity: 0, y: -50 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1, ease: "easeOut" }}
-  whileHover={{
-    scale: 1.1,
-    color: "#38bdf8", // Hover color
-    textShadow: "0px 0px 8px rgba(56, 189, 248, 0.7)", // Text shadow on hover
-  }} 
-  className="md:text-5xl text-4xl font-extrabold text-white mb-6 mt-2 text-center tracking-wide"
->
-  My Projects
-</motion.h1>
-
+  <motion.h1
+   className="md:text-6xl text-4xl text-center text-white font-extrabold   mb-6 relative"
+   initial={{ opacity: 0 }}
+   animate={{ opacity: 1, scale: 1.1 }}
+   // transition={{ duration: 1 }}
+   whileHover={{ scale: 1.2 }}
+ >
+ My Projects
+   <span className="absolute inset-0 bg-gradient-to-r from-teal-400 via-purple-500 to-pink-600 opacity-30 blur-lg"></span>
+   
+   {/* Distressed Text Effect */}
+   <span className="absolute inset-0 text-shadow-xl opacity-50 filter blur-sm contrast-150 saturate-200"></span>
+ 
+   {/* Glitch Effect */}
+   <span className="absolute inset-0 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 opacity-40 blur-md animate-glitch"></span>
+ </motion.h1>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Project 1 */}

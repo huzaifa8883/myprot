@@ -6,6 +6,7 @@ import { faBars, faXmark,faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';// Import search and bars icons
 import { useEffect } from 'react';
 
+
 const Headerr = () => {
 
   const [toggleform, settoggleform] = useState(false);
@@ -15,19 +16,19 @@ const Headerr = () => {
     console.log("Toggling form", toggleform);
     settoggleform(!toggleform);
   };
-//   useEffect(() => {
-//     if (toggleform) {
-//       document.body.style.overflow = 'hidden'; // Scroll ko disable karein
-//       document.body.style.position = 'fixed'; // Body ki position ko fixed karein
-//     } else {
-//       document.body.style.overflow = 'auto'; 
-//       document.body.style.position = 'relative'; // Position ko reset karein
-//     }
-//     return () => {
-//       document.body.style.overflow = 'auto'; // Cleanup
-//       document.body.style.position = 'relative'; // Cleanup
-//     };
-//   }, [toggleform]);
+  useEffect(() => {
+    if (toggleform) {
+      document.body.style.overflow = 'hidden'; // Scroll ko disable karein
+      document.body.style.position = 'fixed'; // Body ki position ko fixed karein
+    } else {
+      document.body.style.overflow = 'auto'; 
+      document.body.style.position = 'relative'; // Position ko reset karein
+    }
+    return () => {
+      document.body.style.overflow = 'auto'; // Cleanup
+      document.body.style.position = 'relative'; // Cleanup
+    };
+  }, [toggleform]);
   return (
     <>
       <div className="h-[80px] fixed top-0 left-0  border-b border-gray-700 z-50 w-full flex items-center bg-[#2a2c39]  shadow-md font-sans">
@@ -120,7 +121,7 @@ const Headerr = () => {
     "Home",
     "About Me",
     "Projects",
-    "Skills",
+   
     
   
     "Contact",

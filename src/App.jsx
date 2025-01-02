@@ -8,7 +8,7 @@ import Portfolio from './components/Aboutus'
 import ContactUs from './components/Contactus'
 import Headerr from './components/Headerr'
 
-
+import Footer from './components/Footer'
 
 
 
@@ -28,6 +28,7 @@ const App = () => {
 
     
    </Routes>
+   <Footer/>
    </>
   )
 }
