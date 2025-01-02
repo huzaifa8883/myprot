@@ -1,12 +1,13 @@
 
 import React from 'react'
-import Header from './components/header'
 import { Routes,Route } from 'react-router-dom'
 import Home from './components/Home'
 import ProjectDetail from './components/Projectdetail'
 import ProjectsPage from './components/Projects'
 import Portfolio from './components/Aboutus'
 import ContactUs from './components/Contactus'
+import Headerr from './components/Headerr'
+
 
 
 
@@ -14,7 +15,7 @@ import ContactUs from './components/Contactus'
 const App = () => {
   return (
    <>
-      <Header />
+      <Headerr />
   
    <Routes>
     <Route path="/" element={<Home />} />
