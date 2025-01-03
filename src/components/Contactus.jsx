@@ -131,7 +131,7 @@ const ContactUs = () => {
         </section>
 
         {/* Request Form */}
-        <section className="mb-16">
+        <section className="">
           <motion.h2
             className="text-3xl font-semibold text-blue-400 text-center mb-6"
             initial={{ opacity: 0 }}

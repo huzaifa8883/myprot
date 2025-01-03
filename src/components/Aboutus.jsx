@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#1f2029] via-[#2a2c39] to-[#11151f] text-white font-sans">
+    <div className="h-full bg-gradient-to-b from-[#1f2029] via-[#2a2c39] to-[#11151f] text-white font-sans">
       {/* Header */}
       <header className="text-center py-6">
         <motion.h1
@@ -108,7 +108,7 @@ const Portfolio = () => {
 </section>
 
         {/* Hobbies & Interests */}
-        <section className="mb-16">
+        <section className="">
           <motion.h2
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
