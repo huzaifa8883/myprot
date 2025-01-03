@@ -1,6 +1,7 @@
 
 import React from 'react'
-import { Routes,Route,Switch } from 'react-router-dom'
+import { Routes,Route } from 'react-router-dom'
+
 import Home from './components/Home'
 import ProjectDetail from './components/Projectdetail'
 import ProjectsPage from './components/Projects'
@@ -17,7 +18,7 @@ const App = () => {
    <>
       <Headerr />
       <Routes>
-      <Switch>
+     
 
     <Route path="/" element={<Home />} />
     <Route path="/projectdetail/:project" element={<ProjectDetail/>} />
@@ -26,7 +27,7 @@ const App = () => {
     <Route path="/contactme" element={<ContactUs />} />
 
 
-    </Switch>
+
     
    </Routes>
    <Footer/>
